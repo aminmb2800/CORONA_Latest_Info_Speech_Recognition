@@ -13,12 +13,12 @@ import time
 import threading
 
 # we need from parseHub. 
-API_KEY = "tDyPS28i8WzJ"
-PROJECT_TOKEN = "tU2EbpG9FkFT"
-RUN_TOKEN = "tM-fkBSfznJ_"
+API_KEY = "tDyPS28i8WzJ"        #change the your own string which you can get from parseHub
+PROJECT_TOKEN = "tU2EbpG9FkFT"  #change the your own string which you can get from parseHub
+RUN_TOKEN = "tM-fkBSfznJ_"      #change the your own string which you can get from parseHub
 
 
-
+# class Data which contains the data of corona website https://www.worldometers.info/coronavirus/ and also the update of data from the website 
 class Data:
     def __init__(self, api_key, project_token):
         self.api_key = api_key
@@ -85,12 +85,13 @@ class Data:
         t = threading.Thread(target=poll)
         t.start()
 
-
+# using pyttsx3 library (text to speech) when we get the data in string and present it in speech 
 def speak(text):
     engine = pyttsx3.init()
     engine.say(text)
     engine.runAndWait()
 
+# using speech_recognition library in order to recognize our speech .
 def get_audio():
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -104,6 +105,7 @@ def get_audio():
 
     return said.lower()
 
+# main function containing our speech pattern and then by calling specific function get the result.   
 def main():
     print("Strated Program")
     data = Data(API_KEY, PROJECT_TOKEN)
@@ -158,48 +160,6 @@ def main():
             break
 
 main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-    
-
-
-
-    
-
-    
-    
-
-    
-
-       
-
-        
-        
-        
-        
-
-main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
