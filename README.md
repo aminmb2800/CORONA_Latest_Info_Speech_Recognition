@@ -1,4 +1,4 @@
-# CORONA_Latest_Info_Web_Scraping 
+# CORONA_Latest_Info_Web_Scraping_Speech_Recognition
 Coronavirus latest Update Information by using API for web scraping and python speech recognition. 
 
 ## Description
