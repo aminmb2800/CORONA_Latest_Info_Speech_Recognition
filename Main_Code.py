@@ -13,9 +13,9 @@ import time
 import threading
 
 # we need from parseHub. 
-API_KEY = "tDyPS28i8WzJ"        #change the your own string which you can get from parseHub
-PROJECT_TOKEN = "tU2EbpG9FkFT"  #change the your own string which you can get from parseHub
-RUN_TOKEN = "tM-fkBSfznJ_"      #change the your own string which you can get from parseHub
+API_KEY = "tDyPS28i8WzJ"        #change your own string which you can get from parseHub
+PROJECT_TOKEN = "tU2EbpG9FkFT"  #change your own string which you can get from parseHub
+RUN_TOKEN = "tM-fkBSfznJ_"      #change your own string which you can get from parseHub
 
 
 # class Data which contains the data of corona website https://www.worldometers.info/coronavirus/ and also the update of data from the website 
